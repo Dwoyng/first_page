@@ -7,7 +7,7 @@ function login() {
     console.log("Inputs:", Ques1, Ques2, Question3); // Debugging
 
     // Các câu trả lời hợp lệ
-    const validQues1 = ["Vương Ngọc Hà", "Hà", "vương ngọc hà"];
+    const validQues1 = ["Vương Ngọc Hà", "Hà", "vương ngọc hà","Ngọc Hà"];
     const validQues2 = ["Hà Liu", "hà liu", "Hà liu", "hà Liu"];
     const validQues3 = ["Thái Tuấn Dương", "Dương", "Chó", "chó", "Dwoyng", "dương", "cậu", "dwoyng"];
 
