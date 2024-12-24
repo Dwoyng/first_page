@@ -1,0 +1,58 @@
+  /* Đặt ảnh nền phủ toàn màn hình */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(christmas-2529.gif); /* Đảm bảo thay đổi URL ảnh theo đúng vị trí */
+    background-repeat: no-repeat;
+    background-size: cover; /* Ảnh phủ hết màn hình */
+    background-position: center; /* Căn giữa ảnh */
+    background-attachment: fixed; /* Ảnh nền cố định khi cuộn trang */
+    overflow: hidden; /* Ngăn không cho cuộn nếu cần */
+}
+
+/* Thiết kế giao diện login */
+.login-container {
+    background-color: rgb(134, 162, 169);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    z-index: 2;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #21839c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    font-size: 0.9em;
+}

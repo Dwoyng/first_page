@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Liên kết file CSS -->
+    <title>Login Page</title>
+   <!-- <style>
+        /* Đặt ảnh nền phủ toàn màn hình */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(christmas-2529.gif); /* Đảm bảo thay đổi URL ảnh theo đúng vị trí */
+            background-repeat: no-repeat;
+            background-size: cover; /* Ảnh phủ hết màn hình */
+            background-position: center; /* Căn giữa ảnh */
+            background-attachment: fixed; /* Ảnh nền cố định khi cuộn trang */
+            overflow: hidden; /* Ngăn không cho cuộn nếu cần */
+        }
+
+        /* Thiết kế giao diện login */
+        .login-container {
+            background-color: rgb(134, 162, 169);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .login-container h1 {
+            margin-bottom: 20px;
+        }
+
+        .login-container input {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #21839c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+    </style>-->
+</head>
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <input type="text" id="ques1" placeholder="What's your name">
+        <input type="text" id="ques2" placeholder="What's your nickname">
+        <input type="text" id="ques3" placeholder="Who's the best handsome in the world :)))">
+        <button type="button" onclick="login()">Login</button>
+        <p id="error" class="error"></p>
+    </div>
+    <script src="script.js"></script> <!-- Liên kết file JavaScript -->  
+   <!-- <script>
+        function login() {
+            const Ques1 = document.getElementById('ques1').value.trim();
+            const Ques2 = document.getElementById('ques2').value.trim();
+            const Question3 = document.getElementById('ques3').value.trim();
+            const errorElement = document.getElementById('error');
+
+            console.log("Inputs:", Ques1, Ques2, Question3); // Debugging
+
+            // Các câu trả lời hợp lệ
+            const validQues1 = ["Vương Ngọc Hà", "Hà", "vương ngọc hà"];
+            const validQues2 = ["Hà Liu", "hà liu", "Hà liu", "hà Liu"];
+            const validQues3 = ["Thái Tuấn Dương", "Dương", "Chó", "chó", "Dwoyng", "dương", "cậu", "dwoyng"];
+
+            const isQues1Valid = validQues1.includes(Ques1);
+            const isQues2Valid = validQues2.includes(Ques2);
+            const isQues3Valid = validQues3.includes(Question3);
+
+            console.log("Validation:", isQues1Valid, isQues2Valid, isQues3Valid); // Debugging
+
+            // Kiểm tra các câu trả lời
+            if (isQues1Valid && isQues2Valid && isQues3Valid) {
+                // Chuyển hướng trang
+                window.location.assign("https://www.youtube.com/watch?v=usHkU9tGPeo&list=RDAuxULopbguY&index=21");
+            } else if (isQues1Valid && isQues2Valid && !isQues3Valid) {
+                alert("Sai rồi đấy, xem lại xem thằng nào đẹp zai nhất đi :))))");
+            }
+            else if (!isQues1Valid && isQues2Valid && isQues3Valid) {
+                alert("Tên mình còn viết sai là thế nào đây !")
+            }
+            else if (isQues1Valid && !isQues2Valid && isQues3Valid) {
+                alert("Sai câu 2 rồi cưng ơiiiiii")
+            }
+            else if (!isQues1Valid && !isQues2Valid && isQues3Valid) {
+                alert("Sai câu 1, 2 rồi cưng ơiiiiii")
+            }
+            else if (isQues1Valid && !isQues2Valid && !isQues3Valid) {
+                alert("Sai câu 2, 3 rồi cưng ơiiiiii")
+            }
+            else if (!isQues1Valid && isQues2Valid && !isQues3Valid) {
+                alert("Sai câu 1, 3 rồi cưng ơiiiiii")
+            }
+            else {
+                alert("Sai hết rồi cưng ơi, làm lại đi :)))");
+            }
+        }
+    </script>-->
+</body>
+</html>
